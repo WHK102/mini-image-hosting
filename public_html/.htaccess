@@ -1,0 +1,6 @@
+# MiniHostingIMG V1.0 by WHK - 2010-02-10
+Options -Indexes
+ErrorDocument 404 "File not found <a href='javascript:history.go(-1);'>Back</a>"
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !(.*)index.php$
+RewriteRule ^(.*)$ index.php?data=$1
